@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vespa 50 (V5A1T) · Baujahr 1968 · Zu verkaufen</title>
+  <meta name="description" content="Vespa 50 (V5A1T), Baujahr 1968, Original-Import aus Italien. Restauriert, gepflegt und zu verkaufen für 4.000 €." />
+
+  <!--
+    Verhindert einen "Flash of Wrong Theme": Dieses kleine Skript läuft
+    synchron, bevor die Seite gezeichnet wird, liest die gespeicherte
+    Wahl aus localStorage oder die Systemeinstellung (prefers-color-scheme)
+    aus und setzt das Attribut data-theme direkt am <html>-Element.
+    Die eigentliche Umschalt-Logik (Klick auf den Button) steckt in script.js.
+  -->
+  <script>
+    (function () {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Sprungmarke für Tastatur- und Screenreader-Nutzer -->
+  <a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
+
+  <!-- 1. Kopfbereich (Hero) -->
+  <header class="hero" id="top">
+    <button
+      id="theme-toggle"
+      class="theme-toggle"
+      type="button"
+      aria-pressed="false"
+      aria-label="Dunklen Modus umschalten"
+    >
+      <!-- Icons werden per CSS je nach data-theme ein-/ausgeblendet -->
+      <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="4.2" fill="currentColor" />
+        <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <line x1="12" y1="1.5" x2="12" y2="4.2" />
+          <line x1="12" y1="19.8" x2="12" y2="22.5" />
+          <line x1="1.5" y1="12" x2="4.2" y2="12" />
+          <line x1="19.8" y1="12" x2="22.5" y2="12" />
+          <line x1="4.4" y1="4.4" x2="6.3" y2="6.3" />
+          <line x1="17.7" y1="17.7" x2="19.6" y2="19.6" />
+          <line x1="4.4" y1="19.6" x2="6.3" y2="17.7" />
+          <line x1="17.7" y1="6.3" x2="19.6" y2="4.4" />
+        </g>
+      </svg>
+      <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path
+          fill="currentColor"
+          d="M20.5 14.9c-.2-.3-.6-.4-.9-.3-1 .4-2.1.6-3.2.6-4.6 0-8.4-3.8-8.4-8.4 0-1.4.3-2.7.9-3.9.2-.4 0-.8-.4-1-.3-.1-.6-.1-.9.1C4.4 3.9 2.5 7.2 2.5 11c0 5.8 4.7 10.5 10.5 10.5 3.7 0 7-1.9 8.9-5 .2-.2.2-.5-.1-.6-.1-.2-.2-.3-.3-.5Z"
+        />
+      </svg>
+    </button>
+
+    <img
+      class="hero-image"
+      src="images/platzhalter-1.jpg"
+      alt="Vespa 50 (V5A1T) in Mondscheinweiß, seitliche Gesamtansicht"
+      width="1600"
+      height="1200"
+    />
+
+    <div class="hero-content">
+      <h1>Vespa 50&nbsp;(V5A1T)</h1>
+      <p class="subtitle">Baujahr 1968 · Original-Import aus Italien · 4.000&nbsp;€</p>
+      <a class="hero-cta" href="#kontakt">Anfrage senden</a>
+    </div>
+  </header>
+
+  <main id="hauptinhalt">
+
+    <!-- 2. Bildergalerie -->
+    <section class="section" id="galerie" aria-labelledby="galerie-heading">
+      <div class="section-inner">
+        <h2 id="galerie-heading" class="reveal">Galerie</h2>
+        <p class="section-lead reveal">
+          Ein Rundgang um und durch die Vespa. Alle Bilder lassen sich per Klick oder
+          mit der Eingabetaste vergrößern.
+        </p>
+
+        <div class="gallery-grid">
+          <button class="gallery-item reveal" type="button" data-full="images/platzhalter-2.jpg" data-alt="Vespa 50, Ansicht von vorne">
+            <img src="images/platzhalter-2.jpg" alt="Vespa 50, Ansicht von vorne" loading="lazy" width="800" height="600" />
+          </button>
+          <button class="gallery-item reveal" type="button" data-full="images/platzhalter-3.jpg" data-alt="Vespa 50, Ansicht von hinten">
+            <img src="images/platzhalter-3.jpg" alt="Vespa 50, Ansicht von hinten" loading="lazy" width="800" height="600" />
+          </button>
+          <button class="gallery-item reveal" type="button" data-full="images/platzhalter-4.jpg" data-alt="Draufsicht auf Lenker, Sitzbank und Tacho">
+            <img src="images/platzhalter-4.jpg" alt="Draufsicht auf Lenker, Sitzbank und Tacho" loading="lazy" width="800" height="600" />
+          </button>
+          <button class="gallery-item reveal" type="button" data-full="images/platzhalter-5.jpg" data-alt="Ansicht von hinten rechts mit Blick auf die Motorklappe">
+            <img src="images/platzhalter-5.jpg" alt="Ansicht von hinten rechts mit Blick auf die Motorklappe" loading="lazy" width="800" height="600" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Technische Daten -->
+    <section class="section section-alt" id="daten" aria-labelledby="daten-heading">
+      <div class="section-inner">
+        <h2 id="daten-heading" class="reveal">Technische Daten</h2>
+
+        <div class="table-wrapper reveal">
+          <table>
+            <caption class="visually-hidden">Technische Daten der Vespa 50 (V5A1T)</caption>
+            <tbody>
+              <tr>
+                <th scope="row">Modell</th>
+                <td>Vespa 50 (V5A1T)</td>
+              </tr>
+              <tr>
+                <th scope="row">Baujahr</th>
+                <td>1968</td>
+              </tr>
+              <tr>
+                <th scope="row">Herkunft</th>
+                <td>Original-Import aus Italien</td>
+              </tr>
+              <tr>
+                <th scope="row">Farbe</th>
+                <td>Original Silber, „Mondscheinweiß“</td>
+              </tr>
+              <tr>
+                <th scope="row">Hubraum</th>
+                <td>50 ccm</td>
+              </tr>
+              <tr>
+                <th scope="row">Laufleistung seit Restauration</th>
+                <td>ca. 1.800 km</td>
+              </tr>
+              <tr>
+                <th scope="row">Durchgeführte Arbeiten</th>
+                <td>Neuer 50-ccm-Zylinder, erneuerte Bowdenzüge, Getriebeölwechsel</td>
+              </tr>
+              <tr>
+                <th scope="row">Papiere / Zulassungsstatus</th>
+                <td>Kaufvertrag vorhanden, Fahrzeug versichert, Kopie der ACI-Papiere (italienische Fahrzeugpapiere) vorhanden</td>
+              </tr>
+              <tr>
+                <th scope="row">Preis</th>
+                <td>4.000&nbsp;€</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Beschreibung und Zustand -->
+    <section class="section" id="beschreibung" aria-labelledby="beschreibung-heading">
+      <div class="section-inner section-narrow">
+        <h2 id="beschreibung-heading" class="reveal">Beschreibung und Zustand</h2>
+
+        <div class="prose reveal">
+          <p>
+            Diese Vespa 50 (V5A1T) wurde 1968 gebaut und stammt als Original-Import
+            direkt aus Italien. Sie trägt ihre originale Lackierung in Silber, im
+            Farbton „Mondscheinweiß“, und macht optisch wie mechanisch einen
+            gepflegten Eindruck.
+          </p>
+          <p>
+            Laut Angabe des Vorbesitzers wurde die Vespa 2021 vom Vespa-Spezialisten
+            „Il Vespino“ restauriert. Für diese Restaurierung liegen mir jedoch
+            <strong>keine Rechnungen oder sonstigen Belege</strong> vor — ich gebe
+            diese Information transparent so weiter, wie sie mir mitgeteilt wurde,
+            kann sie aber nicht durch Dokumente bestätigen. Seit dieser Restaurierung
+            wurde das Fahrzeug nach Kenntnisstand rund 1.800&nbsp;km bewegt.
+          </p>
+          <p>
+            Während meiner Besitzzeit habe ich selbst folgende Arbeiten durchgeführt:
+            einen neuen 50-ccm-Zylinder verbaut, sämtliche Bowdenzüge erneuert und
+            das Getriebeöl gewechselt. Die Vespa läuft und schaltet entsprechend
+            zuverlässig.
+          </p>
+          <p>
+            Zum Fahrzeug gehören ein Kaufvertrag sowie eine Kopie der italienischen
+            Fahrzeugpapiere (ACI). Es ist aktuell versichert. Für Fragen zur
+            Zulassung im eigenen Namen empfehle ich, sich vorab bei der zuständigen
+            Zulassungsstelle zu informieren.
+          </p>
+          <p>
+            Der Preis versteht sich als Privatverkauf ohne Garantie und Gewährleistung,
+            unter Ausschluss jeglicher Sachmängelhaftung.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Kontaktbereich -->
+    <section class="section section-alt" id="kontakt" aria-labelledby="kontakt-heading">
+      <div class="section-inner section-narrow">
+        <h2 id="kontakt-heading" class="reveal">Interesse? Jetzt anfragen</h2>
+        <p class="section-lead reveal">
+          Bei Fragen oder Interesse an einer Besichtigung freue ich mich über eine
+          Nachricht. Ich melde mich in der Regel innerhalb weniger Tage zurück.
+        </p>
+
+        <form
+          class="contact-form reveal"
+          id="contact-form"
+          action="https://formspree.io/f/xlgqazew"
+          method="POST"
+          novalidate
+        >
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+              aria-required="true"
+              aria-describedby="name-error"
+            />
+            <span class="error-message" id="name-error" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-Mail-Adresse</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              aria-required="true"
+              aria-describedby="email-error"
+            />
+            <span class="error-message" id="email-error" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Nachricht</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              required
+              aria-required="true"
+              aria-describedby="message-error"
+            ></textarea>
+            <span class="error-message" id="message-error" role="alert"></span>
+          </div>
+
+          <!-- Verbessert den Betreff der weitergeleiteten E-Mail bei Formspree -->
+          <input type="hidden" name="_subject" value="Neue Anfrage: Vespa 50 (V5A1T)" />
+          <!-- Honeypot-Feld gegen einfache Spam-Bots: für Menschen unsichtbar, per CSS versteckt -->
+          <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off" />
+
+          <div class="form-actions">
+            <button type="submit" id="submit-button">Anfrage senden</button>
+            <span class="form-status" id="form-status" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+
+        <div class="form-success" id="form-success" role="status" tabindex="-1" hidden>
+          <h3>Vielen Dank für Ihre Anfrage!</h3>
+          <p>Ihre Nachricht wurde erfolgreich versendet. Ich melde mich so schnell wie möglich bei Ihnen.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. Fußzeile -->
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year">2026</span> Konstantin Böhm</p>
+  </footer>
+
+  <!-- Lightbox-Overlay für die Galerie, wird per JS befüllt und ein-/ausgeblendet -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Vergrößerte Ansicht schließen">
+      &times;
+    </button>
+    <img class="lightbox-image" id="lightbox-image" src="" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
